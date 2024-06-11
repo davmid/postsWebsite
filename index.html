@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>posts:</h1>
+    <form id="newPostForm">
+        <input type="text" id="postTitle" placeholder="Title" required>
+        <textarea id="postContent" placeholder="Content" required></textarea>
+        <input type="file" id="postImage" accept="image/*">
+        <button type="button" onclick="toggleImageUpload()">Add Image</button>
+        <input type="file" id="postImage" accept="image/*" style="display: none;">
+        <button type="submit">Add your Post</button>
+    </form>
+    <div id="postsContainer"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>
